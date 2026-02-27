@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Roman's Save Article as TXT",
+  "version": "1.1",
+  "description": "Save the current webpage or article as a clean UTF-8 text file on your Desktop in one click!",
+  "author": "Roman Menyhart",
+  "homepage_url": "https://menyhart.net",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "tabs",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "Save Article as TXT",
+    "default_icon": {
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "save-article-as-txt@menyhart.net",
+      "strict_min_version": "117.0"
+    }
+  }
+}
